@@ -1,0 +1,4 @@
+ls
+touch= crear carpeta
+rm= eliminar archivos
+rm -rf= eliminar carpetas (directorios)
