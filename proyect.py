@@ -130,7 +130,7 @@ while True:
             print(yt.author)
             
             engine.runAndWait()
-            ruta_fin = yt.streams.get_audio_only().download('/Youtube_audios')
+            ruta_fin = yt.streams.get_audio_only().download(r"E:\Youtube_audios")
             audioclip = AudioFileClip(ruta_fin)
             audioclip.write_audiofile(audioclip.filename.replace('.mp4', '.mp3'))
 
