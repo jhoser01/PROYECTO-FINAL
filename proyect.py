@@ -91,10 +91,10 @@ while True:
                 
                         
             quality = input("Elige el numero que esta a la derecha de la calidad de video que desees==> ")
-            videoclip=yt.streams.get_by_itag(quality).download(r"\Youtube_videos")
+            videoclip=yt.streams.get_by_itag(quality).download(r"E:\Youtube_videos")
             videoclip2=VideoFileClip(videoclip)
 
-            audioclip=yt.streams.get_audio_only().download('/audio')
+            audioclip=yt.streams.get_audio_only().download(r"E:\audio")
             audioclip1=AudioFileClip(audioclip)
 
             videoclip2=videoclip2.set_audio(audioclip1)
